@@ -2,7 +2,7 @@ import React from 'react'
 
 const Stats = () => {
     return (
-        <div className='bg-accent rounded-[20px] px-8 py-6 w-[800px]'>
+        <div className='bg-accent rounded-[20px] px-8 py-4 w-[800px]'>
             <div className='flex flex-wrap gap-x-6 items-center justify-between'>
                 <div className='flex flex-col gap-y-2 items-center'>
                     <div className='text-3xl font-bold'>7</div>
