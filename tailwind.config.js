@@ -33,6 +33,9 @@ module.exports = {
                 white: '#fff',
                 pink: 'pink',
             },
+            fontFamily: {
+                body: ['poppins', 'sans-serif'],
+            },
         },
     },
     plugins: [],
