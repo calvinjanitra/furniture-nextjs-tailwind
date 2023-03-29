@@ -41,8 +41,8 @@ export const feature = {
         },
     ],
     feature2: {
-        src: '/feature-2.png',
-        title: 'Comfort Plus: The Ultimate Sofa for Relaxation',
+        src: '/features-2.png',
+        title: 'Upgrade Your Cooking Space with Stylish Kitchen Sets',
         subtitle: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quae iste aliquid ipsum repellat hic modi, magnam impedit nemo veritatis.',
     },
 };
@@ -68,5 +68,64 @@ export const newitemslider = [
     {
         src: '/item-4.png',
         title: 'Lighting',
+    },
+];
+
+export const product = {
+    title: 'All Products',
+    subtitle:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias fugit necessitatibus quod fugiat dolorum mollitia velit deleniti quisquam nulla rerum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, corporis! Distinctio quo delectus beatae eveniet odit cupiditate, amet alias ipsam.',
+};
+
+export const productslider = [
+    {
+        src: '/product-1.png',
+        title: '',
+        price: '',
+    },
+    {
+        src: '/product-2.png',
+        title: '',
+        price: '',
+    },
+    {
+        src: '/product-3.png',
+        title: '',
+        price: '',
+    },
+    {
+        src: '/product-4.png',
+        title: '',
+        price: '',
+    },
+    {
+        src: '/product-5.png',
+        title: '',
+        price: '',
+    },
+    {
+        src: '/product-6.png',
+        title: '',
+        price: '',
+    },
+    {
+        src: '/product-7.png',
+        title: '',
+        price: '',
+    },
+    {
+        src: '/product-8.png',
+        title: '',
+        price: '',
+    },
+    {
+        src: '/product-9.png',
+        title: '',
+        price: '',
+    },
+    {
+        src: '/product-10.png',
+        title: '',
+        price: '',
     },
 ];

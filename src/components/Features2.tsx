@@ -26,7 +26,7 @@ const Features2 = () => {
                         })}
                     </div>
                     <div className='order-2'>
-                        <Image src={Image2} alt='' />
+                        <Image src={src} alt='' width={600} height={400} />
                     </div>
                 </div>
             </div>

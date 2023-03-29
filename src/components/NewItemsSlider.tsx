@@ -18,8 +18,12 @@ const NewItemsSlider = () => {
                     spaceBetween: 16,
                 },
                 768: {
-                    slidesPerView: 2,
-                    spaceBetween: 6,
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                },
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
                 },
             }}>
             {newitemslider.map((items, index) => {
@@ -28,7 +32,7 @@ const NewItemsSlider = () => {
                     <SwiperSlide key={index} className='max-w-[265px]'>
                         <div className='relative'>
                             <Image src={src} alt='' width={400} height={100} />
-                            <div className='absolute text-white'>{title}</div>
+                            <div className='absolute text-white bottom-2 text-center w-full text-lg'>{title}</div>
                         </div>
                     </SwiperSlide>
                 );
