@@ -69,6 +69,14 @@ export const newitemslider = [
         src: '/item-4.png',
         title: 'Lighting',
     },
+    {
+        src: '/item-5.jpg',
+        title: 'Mirror',
+    },
+    {
+        src: '/item-6.jpg',
+        title: 'Living Room',
+    },
 ];
 
 export const product = {
@@ -129,3 +137,8 @@ export const productslider = [
         price: '',
     },
 ];
+
+export const footer = {
+    title: '',
+    src: '',
+};
