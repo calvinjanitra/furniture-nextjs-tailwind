@@ -7,12 +7,15 @@ import Hero from '@/components/Hero';
 import NewItems from '@/components/NewItems';
 import Products from '@/components/Products';
 import Features2 from '@/components/Features2';
+import LoginPage from '@/components/LoginPage';
+import RegisterPage from '@/components/RegisterPage';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
     return (
         <div className='w-full mx-auto font-body'>
+            <LoginPage />
             <Hero />
             <Features />
             <NewItems />
