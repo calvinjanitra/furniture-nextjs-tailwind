@@ -85,58 +85,118 @@ export const product = {
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias fugit necessitatibus quod fugiat dolorum mollitia velit deleniti quisquam nulla rerum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, corporis! Distinctio quo delectus beatae eveniet odit cupiditate, amet alias ipsam.',
 };
 
-export const productslider = [
-    {
-        src: '/product-1.png',
-        title: '',
-        price: '',
-    },
-    {
-        src: '/product-2.png',
-        title: '',
-        price: '',
-    },
-    {
-        src: '/product-3.png',
-        title: '',
-        price: '',
-    },
-    {
-        src: '/product-4.png',
-        title: '',
-        price: '',
-    },
-    {
-        src: '/product-5.png',
-        title: '',
-        price: '',
-    },
-    {
-        src: '/product-6.png',
-        title: '',
-        price: '',
-    },
-    {
-        src: '/product-7.png',
-        title: '',
-        price: '',
-    },
-    {
-        src: '/product-8.png',
-        title: '',
-        price: '',
-    },
-    {
-        src: '/product-9.png',
-        title: '',
-        price: '',
-    },
-    {
-        src: '/product-10.png',
-        title: '',
-        price: '',
-    },
-];
+export const productslider = {
+    pages: [
+        {
+            productList: [
+                {
+                    src: '/product-1.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-2.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-3.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-4.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-5.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-6.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-7.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-8.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-9.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-10.png',
+                    title: '',
+                    price: '',
+                },
+            ],
+        },
+        {
+            productList: [
+                {
+                    src: '/product-1.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-2.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-3.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-4.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-5.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-6.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-7.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-8.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-9.png',
+                    title: '',
+                    price: '',
+                },
+                {
+                    src: '/product-10.png',
+                    title: '',
+                    price: '',
+                },
+            ],
+        },
+    ],
+};
 
 export const footer = {
     title: '',
