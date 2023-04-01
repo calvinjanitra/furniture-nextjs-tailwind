@@ -1,19 +1,22 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Image from 'next/image';
+
 import Image1 from '../../public/item-1.png';
 import Image2 from '../../public/item-2.png';
 import Image3 from '../../public/item-3.png';
+
 import { newitemslider } from '../pages/data';
-import Image from 'next/image';
-import { Autoplay, Pagination, Navigation } from 'swiper';
+
 const NewItemsSlider = () => {
     return (
         <Swiper
             loop={true}
             autoplay={{
-                delay: 2500,
+                delay: 2000,
                 disableOnInteraction: false,
             }}
             pagination={{
