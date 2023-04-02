@@ -14,19 +14,9 @@ const ProductsSlider = () => {
         <Swiper grabCursor={true}>
             {pages.map((item, index) => {
                 return (
-                    <SwiperSlide>
+                    <SwiperSlide key={index}>
                         <div>
                             <Card />
-                            {/* {item.productList.map((product, index) => {
-                                const { src, title } = product;
-                                return (
-                                    <div>
-                                        <div>
-                                            <Image src={src} alt='' width={200} height={100} />
-                                        </div>
-                                    </div>
-                                );
-                            })} */}
                         </div>
                     </SwiperSlide>
                 );

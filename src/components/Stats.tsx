@@ -8,7 +8,7 @@ const Stats = () => {
                 {stat.map((item, index) => {
                     const { title, subtitle } = item;
                     return (
-                        <div className='flex flex-col gap-y-2 items-center'>
+                        <div className='flex flex-col gap-y-2 items-center' key={index}>
                             <div className='text-3xl font-bold'>{title}</div>
                             <div className='w-[100px] font-light text-center'>{subtitle}</div>
                         </div>

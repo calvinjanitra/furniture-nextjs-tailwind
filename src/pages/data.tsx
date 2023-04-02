@@ -2,6 +2,25 @@ import React from 'react';
 import Feature1 from '../../public/features-1.png';
 import { AiFillCheckCircle } from 'react-icons/ai';
 
+export const navigation = [
+    {
+        name: 'home',
+        href: 'home',
+    },
+    {
+        name: 'about',
+        href: 'about',
+    },
+    {
+        name: 'features',
+        href: 'features',
+    },
+    {
+        name: 'contact',
+        href: 'contact',
+    },
+];
+
 export const hero = {
     title: 'Make a Comfy Home with Creativity',
     subtitle: '"Transform your space, elevate your style with our furniture."',
@@ -197,7 +216,35 @@ export const productslider = {
         },
     ],
 };
-
+export const testimonial = {
+    title: '',
+    testi: [
+        {
+            picture: '/avatar-1.png',
+            name: 'John',
+            job: 'Content Creator',
+            message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla vitae voluptatem provident tempore facere excepturi quo modi et. Illum, sint.',
+        },
+        {
+            picture: '/avatar-2.png',
+            name: 'John',
+            job: 'Content Creator',
+            message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla vitae voluptatem provident tempore facere excepturi quo modi et. Illum, sint.',
+        },
+        {
+            picture: '/avatar-3.png',
+            name: 'John',
+            job: 'Content Creator',
+            message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla vitae voluptatem provident tempore facere excepturi quo modi et. Illum, sint.',
+        },
+        {
+            picture: '/avatar-4.png',
+            name: 'John',
+            job: 'Content Creator',
+            message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla vitae voluptatem provident tempore facere excepturi quo modi et. Illum, sint.',
+        },
+    ],
+};
 export const footer = {
     title: '',
     src: '',

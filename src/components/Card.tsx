@@ -8,11 +8,11 @@ const Card = () => {
         <div>
             {pages.map((item, index) => {
                 return (
-                    <div>
+                    <div key={index}>
                         {item.productList.map((itemlist, index) => {
                             const { src, title, price } = itemlist;
                             return (
-                                <div>
+                                <div key={index}>
                                     <Image src={src} alt='' width={200} height={100} />
                                 </div>
                             );

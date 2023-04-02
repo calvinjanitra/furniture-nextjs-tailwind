@@ -18,7 +18,7 @@ const Features2 = () => {
                         {item.map((items, index) => {
                             const { icon, title } = items;
                             return (
-                                <div className='flex flex-row'>
+                                <div className='flex flex-row' key={index}>
                                     <div className='text-2xl mr-4 mt-1'>{icon}</div>
                                     <p className='lg:text-xl'>{title}</p>
                                 </div>

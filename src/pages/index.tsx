@@ -9,18 +9,22 @@ import Products from '@/components/Products';
 import Features2 from '@/components/Features2';
 import LoginPage from '@/components/LoginPage';
 import RegisterPage from '@/components/RegisterPage';
+import Navbar from '@/components/Navbar';
+import Testimonial from '@/components/Testimonial';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
     return (
         <div className='w-full mx-auto font-body'>
-            <LoginPage />
+            <Navbar />
+            {/* <LoginPage /> */}
             <Hero />
             <Features />
             <NewItems />
             <Features2 />
             <Products />
+            <Testimonial />
         </div>
     );
 }
