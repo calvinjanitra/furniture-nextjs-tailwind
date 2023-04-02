@@ -216,7 +216,35 @@ export const productslider = {
         },
     ],
 };
-
+export const testimonial = {
+    title: '',
+    testi: [
+        {
+            picture: '/avatar-1.png',
+            name: 'John',
+            job: 'Content Creator',
+            message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla vitae voluptatem provident tempore facere excepturi quo modi et. Illum, sint.',
+        },
+        {
+            picture: '/avatar-2.png',
+            name: 'John',
+            job: 'Content Creator',
+            message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla vitae voluptatem provident tempore facere excepturi quo modi et. Illum, sint.',
+        },
+        {
+            picture: '/avatar-3.png',
+            name: 'John',
+            job: 'Content Creator',
+            message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla vitae voluptatem provident tempore facere excepturi quo modi et. Illum, sint.',
+        },
+        {
+            picture: '/avatar-4.png',
+            name: 'John',
+            job: 'Content Creator',
+            message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla vitae voluptatem provident tempore facere excepturi quo modi et. Illum, sint.',
+        },
+    ],
+};
 export const footer = {
     title: '',
     src: '',

@@ -14,7 +14,7 @@ const ProductsSlider = () => {
         <Swiper grabCursor={true}>
             {pages.map((item, index) => {
                 return (
-                    <SwiperSlide>
+                    <SwiperSlide key={index}>
                         <div>
                             <Card />
                         </div>

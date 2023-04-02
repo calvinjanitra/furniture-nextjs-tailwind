@@ -10,22 +10,17 @@ import NavMobile from './NavMobile';
 const Navbar = () => {
     const [bg, setBg] = useState(false);
     const [mobileNav, setMobileNav] = useState(false);
-    const [fc, setFc] = useState(false);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
             return window.scrollY > 100 ? setBg(true) : setBg(false);
         });
     });
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            return window.scrollY > 800 ? setFc(true) : setFc(false);
-        });
-    });
+
     return (
-        <header className={`${bg ? 'bg-white bg-transparent py-4 lg:py-6 backdrop-blur-lg text-black' : 'bg-none'} fixed left-0 w-full py-8 z-10`}>
+        <header className={`${bg ? 'bg-primary py-4 lg:py-6 backdrop-blur-lg bg-opacity-90' : 'bg-none'} fixed left-0 w-full py-8 z-10`}>
             <div className='container mx-auto flex justify-between items-center'>
-                <div className={`${fc ? 'text-black' : 'text-white'} font-semibold text-xl h-6 lg:h-8`}>
+                <div className='font-semibold text-xl h-6 lg:h-8 text-white'>
                     <a href='#'>FurniShop</a>
                 </div>
                 <div onClick={() => setMobileNav(!mobileNav)} className='text-white text-2xl lg:hidden cursor-pointer'>
