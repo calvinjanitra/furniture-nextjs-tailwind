@@ -7,7 +7,7 @@ const Testimonial = () => {
         <section className='w-full mt-20'>
             <div className='container mx-auto'>
                 <div className='flex flex-col lg:flex-row lg:justify-between'>
-                    <div className='lg:max-w-[50%]'>
+                    <div className='lg:max-w-[50%] pb-10'>
                         <h2 className='text-3xl font-bold'>What people satisfied us for</h2>
                         <TestimonialSlider />
                     </div>

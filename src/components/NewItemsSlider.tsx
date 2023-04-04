@@ -10,6 +10,7 @@ import Image2 from '../../public/item-2.png';
 import Image3 from '../../public/item-3.png';
 
 import { newitemslider } from '../pages/data';
+import { newitem } from '../pages/data';
 
 const NewItemsSlider = () => {
     return (
@@ -21,9 +22,11 @@ const NewItemsSlider = () => {
             }}
             pagination={{
                 clickable: true,
+                bulletClass: `swiper-pagination-bullet swiper-pagination-testClass`,
             }}
             modules={[Autoplay, Pagination, Navigation]}
             grabCursor={true}
+            slidesPerView='auto'
             breakpoints={{
                 320: {
                     slidesPerView: 2,
@@ -38,13 +41,13 @@ const NewItemsSlider = () => {
                     spaceBetween: 16,
                 },
             }}>
-            {newitemslider.map((items, index) => {
-                const { src, title } = items;
+            {newitemslider.map((item, index) => {
+                const { src, title } = item;
                 return (
-                    <SwiperSlide key={index} className='max-w-[265px]'>
-                        <div className='relative'>
-                            <Image src={src} alt='' width={400} height={100} />
-                            <div className='absolute text-white bottom-2 text-center w-full text-lg'>{title}</div>
+                    <SwiperSlide>
+                        <div className='relative text-white text-lg font-medium'>
+                            <Image src={src} alt='' height={500} width={300} />
+                            <h3 className='absolute bottom-6 w-full text-center'>{title}</h3>
                         </div>
                     </SwiperSlide>
                 );

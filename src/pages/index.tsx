@@ -11,6 +11,7 @@ import LoginPage from '@/components/LoginPage';
 import RegisterPage from '@/components/RegisterPage';
 import Navbar from '@/components/Navbar';
 import Testimonial from '@/components/Testimonial';
+import Contact from '@/components/Contact';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,6 +26,7 @@ export default function Home() {
             <Features2 />
             <Products />
             <Testimonial />
+            <Contact />
         </div>
     );
 }

@@ -18,33 +18,35 @@ const Navbar = () => {
     });
 
     return (
-        <header className={`${bg ? 'bg-primary py-4 lg:py-6 backdrop-blur-lg bg-opacity-90' : 'bg-none'} fixed left-0 w-full py-8 z-10`}>
-            <div className='container mx-auto flex justify-between items-center'>
-                <div className='font-semibold text-xl h-6 lg:h-8 text-white'>
-                    <a href='#'>FurniShop</a>
+        <>
+            <header className={`${bg ? 'bg-primary py-4 lg:py-6 backdrop-blur-lg bg-opacity-90' : 'bg-none'} fixed left-0 w-full py-8 z-10`}>
+                <div className='container mx-auto flex justify-between items-center'>
+                    <div className='font-semibold text-xl h-6 lg:h-8 text-white'>
+                        <a href='#'>FurniShop</a>
+                    </div>
+                    <div onClick={() => setMobileNav(!mobileNav)} className='text-white text-2xl lg:hidden cursor-pointer'>
+                        {mobileNav ? <CgClose /> : <CgMenuRight />}
+                    </div>
+                    <nav className='hidden lg:flex'>
+                        <ul className='lg:flex lg:gap-x-12'>
+                            {navigation.map((item, index) => {
+                                const { name, href } = item;
+                                return (
+                                    <li key={index}>
+                                        <a href={href} className='capitalize text-white hover:border-b transition-all'>
+                                            {name}
+                                        </a>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </nav>
                 </div>
-                <div onClick={() => setMobileNav(!mobileNav)} className='text-white text-2xl lg:hidden cursor-pointer'>
-                    {mobileNav ? <CgClose /> : <CgMenuRight />}
-                </div>
-                <nav className='hidden lg:flex'>
-                    <ul className='lg:flex lg:gap-x-12'>
-                        {navigation.map((item, index) => {
-                            const { name, href } = item;
-                            return (
-                                <li key={index}>
-                                    <a href={href} className='capitalize text-white hover:border-b transition-all'>
-                                        {name}
-                                    </a>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </nav>
-                <div className={`${mobileNav ? 'left-0' : '-left-full'} lg:hidden fixed  w-full max-w-xs bottom-0 h-screen transition-all duration-500`}>
-                    <NavMobile />
-                </div>
+            </header>
+            <div className={`${mobileNav ? 'left-0' : '-left-full'} lg:hidden fixed  w-full max-w-xs bottom-0 h-screen transition-all duration-500 z-50 bg-white shadow-2xl flex flex-col justify-center`}>
+                <NavMobile />
             </div>
-        </header>
+        </>
     );
 };
 
