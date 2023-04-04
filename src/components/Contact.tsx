@@ -2,8 +2,9 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 type Inputs = {
-    example: string;
-    exampleRequired: string;
+    name: string;
+    username: string;
+    password: string;
 };
 
 const Contact = () => {
@@ -21,12 +22,26 @@ const Contact = () => {
                 <div>
                     <h3 className='text-2xl'>Get more discount off your order!</h3>
                 </div>
-                <div className='text-center'>
-                    <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-y-12'>
-                        <input defaultValue='text' {...register('example')} />
-                        <input {...(register('exampleRequired'), { required: true })} />
-                        {errors.exampleRequired && <span>This field is required</span>}
-                        <input type='submit' />
+                <div className=''>
+                    <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-y-4 text-black'>
+                        <div className='flex flex-col'>
+                            <label className='text-white'>Name</label>
+                            <input type='Name' {...register('name')} />
+                        </div>
+                        <div className='flex flex-col'>
+                            <label className='text-white'>Email</label>
+                            <input type='Email' {...register('username', { pattern: /^[A-Za-z]+$/i })} />
+                        </div>
+                        <div className='flex flex-col'>
+                            <label className='text-white'>Password</label>
+                            <input type='password' {...register('password', { required: 'Harus diisi' })} />
+                            <p className='text-red-500'>{errors.password?.message}</p>
+                        </div>
+                        <div className='w-full flex justify-center text-white'>
+                            <button className='border-2 px-4 py-1 rounded-xl bg-[#3b95a0] hover:bg-[#215c62]' type='button' onClick={() => {}}>
+                                Submit
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>

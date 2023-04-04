@@ -44,7 +44,7 @@ const NewItemsSlider = () => {
             {newitemslider.map((item, index) => {
                 const { src, title } = item;
                 return (
-                    <SwiperSlide>
+                    <SwiperSlide key={index}>
                         <div className='relative text-white text-lg font-medium'>
                             <Image src={src} alt='' height={500} width={300} />
                             <h3 className='absolute bottom-6 w-full text-center'>{title}</h3>
