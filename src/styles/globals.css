@@ -25,3 +25,6 @@ a {
     color: inherit;
     text-decoration: none;
 }
+.swiper-pagination-bullet-active {
+    background-color: #2696a2 !important;
+}
