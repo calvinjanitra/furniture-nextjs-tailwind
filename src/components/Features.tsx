@@ -16,14 +16,14 @@ const Features = () => {
                         <Image src={src} alt='' width={600} height={400} />
                     </div>
                     <div className='text-black lg:order-6  lg:w-[50%] flex flex-1 flex-col justify-end text-justify gap-y-4 lg:justify-start mb-8 lg:mb-0'>
-                        <h2 className='font-bold text-xl lg:text-3xl'>{title}</h2>
-                        <p className='lg:text-xl pt-4 lg:pt-4'>{subtitle}</p>
+                        <h2 className='font-bold text-xl lg:text-2xl'>{title}</h2>
+                        <p className='lg:text-lg pt-4 lg:pt-4'>{subtitle}</p>
                         {item.map((items, index) => {
                             const { icon, title } = items;
                             return (
                                 <div className='flex flex-row' key={index}>
-                                    <div className='text-2xl mr-4 mt-1'>{icon}</div>
-                                    <p className='lg:text-xl'>{title}</p>
+                                    <div className='text-xl mr-4 mt-1'>{icon}</div>
+                                    <p className='lg:text-lg'>{title}</p>
                                 </div>
                             );
                         })}

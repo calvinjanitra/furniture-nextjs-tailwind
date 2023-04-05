@@ -18,27 +18,23 @@ const Contact = () => {
 
     return (
         <section className='section bg-[url("/newsletter.png")] min-h-[450px] mt-20'>
-            <div className='container mx-auto border-2 border-solid flex flex-col items-center pt-8 gap-y-8 text-white'>
+            <div className='container mx-auto flex flex-col items-center pt-8 gap-y-8 text-white'>
                 <div>
-                    <h3 className='text-2xl'>Get more discount off your order!</h3>
+                    <h3 className='text-3xl w-[450px] text-center'>Get more discount off your order!</h3>
                 </div>
-                <div className=''>
+                <div className='w-[80%] lg:w-[40%]'>
                     <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-y-4 text-black'>
-                        <div className='flex flex-col'>
-                            <label className='text-white'>Name</label>
-                            <input type='Name' {...register('name')} />
+                        <div className='flex flex-col gap-y-1'>
+                            <label className='text-white text-lg'>Name</label>
+                            <input type='text' placeholder='Enter your name here' {...register('name')} className='h-[40px] rounded-lg px-4' />
                         </div>
-                        <div className='flex flex-col'>
-                            <label className='text-white'>Email</label>
-                            <input type='Email' {...register('username', { pattern: /^[A-Za-z]+$/i })} />
+                        <div className='flex flex-col gap-y-1'>
+                            <label className='text-white text-lg'>Email</label>
+                            <input type='text' placeholder='Enter your Email here' {...register('username', { pattern: /^[A-Za-z]+$/i })} className='h-[40px] rounded-lg px-4' />
+                            <p className='text-red-500'>{errors.username?.message}</p>
                         </div>
-                        <div className='flex flex-col'>
-                            <label className='text-white'>Password</label>
-                            <input type='password' {...register('password', { required: 'Harus diisi' })} />
-                            <p className='text-red-500'>{errors.password?.message}</p>
-                        </div>
-                        <div className='w-full flex justify-center text-white'>
-                            <button className='border-2 px-4 py-1 rounded-xl bg-[#3b95a0] hover:bg-[#215c62]' type='button' onClick={() => {}}>
+                        <div className='w-full flex justify-center text-white mt-4'>
+                            <button className='text-lg font-medium w-full border-2 px-4 py-1 rounded-xl h-[40px] hover:bg-primary bg-[#43919a] bg-opacity-75' type='button' onClick={() => {}}>
                                 Submit
                             </button>
                         </div>
