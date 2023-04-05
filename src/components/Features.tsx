@@ -4,7 +4,7 @@ import Image1 from '../../public/features-1.png';
 import Image2 from '../../public/features-2.png';
 import { AiFillCheckCircle } from 'react-icons/ai';
 
-import { feature } from '../pages/data';
+import { feature } from './data';
 
 const Features = () => {
     const { src, title, subtitle, item } = feature;

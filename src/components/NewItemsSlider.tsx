@@ -9,8 +9,8 @@ import Image1 from '../../public/item-1.png';
 import Image2 from '../../public/item-2.png';
 import Image3 from '../../public/item-3.png';
 
-import { newitemslider } from '../pages/data';
-import { newitem } from '../pages/data';
+import { newitemslider } from './data';
+import { newitem } from './data';
 
 const NewItemsSlider = () => {
     return (

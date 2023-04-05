@@ -1,6 +1,6 @@
 import React from 'react';
 import Stats from './Stats';
-import { hero } from '../pages/data';
+import { hero } from './data';
 
 const Hero = () => {
     const { title, subtitle } = hero;

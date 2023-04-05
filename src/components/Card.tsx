@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { productslider } from '../pages/data';
+import { productslider } from './data';
 
 const Card = () => {
     const { pages } = productslider;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { navigation } from '../pages/data';
+import { navigation } from './data';
 
 const NavMobile = () => {
     return (

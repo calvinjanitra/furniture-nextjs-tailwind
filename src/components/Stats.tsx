@@ -1,5 +1,5 @@
 import React from 'react';
-import { stat } from '../pages/data';
+import { stat } from './data';
 
 const Stats = () => {
     return (

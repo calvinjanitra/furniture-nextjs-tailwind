@@ -1,7 +1,7 @@
 import React from 'react';
 import NewItemsSlider from './NewItemsSlider';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import { newitem } from '../pages/data';
+import { newitem } from './data';
 
 const NewItems = () => {
     const { title, subtitle } = newitem;

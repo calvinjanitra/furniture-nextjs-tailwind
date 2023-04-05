@@ -1,4 +1,3 @@
-import React from 'react';
 import Feature1 from '../../public/features-1.png';
 import { AiFillCheckCircle } from 'react-icons/ai';
 

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Image1 from '../../public/features-1.png';
 import Image2 from '../../public/features-2.png';
 import { AiFillCheckCircle } from 'react-icons/ai';
-import { feature } from '../pages/data';
+import { feature } from './data';
 
 const Features2 = () => {
     const { src, title, subtitle } = feature.feature2;

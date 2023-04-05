@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Logo from '../../public/logo.svg';
 import { CgMenuRight, CgClose } from 'react-icons/cg';
 
-import { navigation } from '../pages/data';
+import { navigation } from './data';
 
 import NavMobile from './NavMobile';
 

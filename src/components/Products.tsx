@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductsSlider from './ProductsSlider';
-import { product } from '../pages/data';
+import { product } from './data';
 
 const Products = () => {
     const { title, subtitle } = product;

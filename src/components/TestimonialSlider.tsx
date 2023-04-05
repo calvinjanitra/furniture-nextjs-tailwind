@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import { Autoplay, Navigation } from 'swiper';
-import { testimonial } from '../pages/data';
+import { testimonial } from './data';
 import Image from 'next/image';
 
 const TestimonialSlider = () => {
