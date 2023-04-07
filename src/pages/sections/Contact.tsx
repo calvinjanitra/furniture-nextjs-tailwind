@@ -17,7 +17,7 @@ const Contact = () => {
     const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
     return (
-        <section className='section bg-[url("/newsletter.png")] min-h-[450px] mt-20'>
+        <section className='section bg-[url("/newsletter.png")] min-h-[450px] mt-20' id='contact'>
             <div className='container mx-auto flex flex-col items-center pt-8 gap-y-8 text-white'>
                 <div>
                     <h3 className='text-3xl w-[450px] text-center'>Get more discount off your order!</h3>

@@ -1,7 +1,8 @@
 import React from 'react';
-import TestimonialSlider from './TestimonialSlider';
+import TestimonialSlider from '../../components/TestimonialSlider';
 import Image from 'next/image';
-import Testi1 from '../../public/testimonial.png';
+import Testi1 from '../../../public/testimonial.png';
+
 const Testimonial = () => {
     return (
         <section className='w-full mt-20'>

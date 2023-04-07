@@ -1,11 +1,18 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+
 import Logo from '../../public/logo.svg';
 import { CgMenuRight, CgClose } from 'react-icons/cg';
 
 import { navigation } from './data';
 
 import NavMobile from './NavMobile';
+
+//import components
+import Features from '../pages/sections/Features';
+import Products from '../pages/sections/Products';
+import Contact from '../pages/sections/Contact';
 
 const Navbar = () => {
     const [bg, setBg] = useState(false);
@@ -15,13 +22,13 @@ const Navbar = () => {
         window.addEventListener('scroll', () => {
             return window.scrollY > 100 ? setBg(true) : setBg(false);
         });
-    });
+    }, []);
 
     return (
         <>
-            <header className={`${bg ? 'bg-primary py-4 lg:py-6 backdrop-blur-lg bg-opacity-90' : 'bg-none'} fixed left-0 w-full py-8 z-10`}>
+            <header className={`fixed left-0 w-full z-10 min-h-[5rem] flex items-center ${bg ? 'bg-primary backdrop-blur-lg bg-opacity-90' : 'bg-none'}`}>
                 <div className='container mx-auto flex justify-between items-center'>
-                    <div className='font-semibold text-xl h-6 lg:h-8 text-white'>
+                    <div className='font-semibold text-2xl h-6 lg:h-8 text-white'>
                         <a href='#'>FurniShop</a>
                     </div>
                     <div onClick={() => setMobileNav(!mobileNav)} className='text-white text-2xl lg:hidden cursor-pointer'>

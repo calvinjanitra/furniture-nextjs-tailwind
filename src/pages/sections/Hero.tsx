@@ -1,6 +1,6 @@
 import React from 'react';
-import Stats from './Stats';
-import { hero } from './data';
+import Stats from '../../components/Stats';
+import { hero } from '../../components/data';
 
 const Hero = () => {
     const { title, subtitle } = hero;
