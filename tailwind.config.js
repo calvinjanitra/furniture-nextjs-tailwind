@@ -8,6 +8,7 @@ module.exports = {
         // Or if using `src` directory:
         './src/**/*.{js,ts,jsx,tsx}',
     ],
+    darkMode: 'class',
     theme: {
         container: {
             padding: {
@@ -33,8 +34,8 @@ module.exports = {
                 white: '#fff',
                 pink: 'pink',
             },
-            fontFamily: {
-                body: ['poppins', 'sans-serif'],
+            backgroundImage: {
+                linea: 'linear-gradient(212.17deg, rgba(255, 247, 247, 0.79) 24.03%, rgba(228, 216, 203, 0.79) 92.12%);',
             },
         },
     },

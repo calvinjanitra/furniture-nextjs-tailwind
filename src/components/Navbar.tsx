@@ -10,13 +10,12 @@ import { navigation } from './data';
 import NavMobile from './NavMobile';
 
 //import components
-import Features from '../pages/sections/Features';
-import Products from '../pages/sections/Products';
-import Contact from '../pages/sections/Contact';
+import Dark from './Dark';
 
 const Navbar = () => {
     const [bg, setBg] = useState(false);
     const [mobileNav, setMobileNav] = useState(false);
+    const [active, setActive] = useState<string>('home');
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -40,12 +39,20 @@ const Navbar = () => {
                                 const { name, href } = item;
                                 return (
                                     <li key={index}>
-                                        <a href={href} className='capitalize text-white hover:border-b transition-all'>
+                                        <a
+                                            href={href}
+                                            className={`capitalize text-white hover:border-b transition-all ${active == name ? 'border-b' : 'border-none'}`}
+                                            onClick={() => {
+                                                setActive(name);
+                                            }}>
                                             {name}
                                         </a>
                                     </li>
                                 );
                             })}
+                            <li>
+                                <Dark />
+                            </li>
                         </ul>
                     </nav>
                 </div>
