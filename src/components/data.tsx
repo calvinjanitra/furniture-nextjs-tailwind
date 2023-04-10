@@ -27,19 +27,19 @@ export const hero = {
 
 export const stat = [
     {
-        title: '7',
+        title: 7,
         subtitle: 'Year Experience',
     },
     {
-        title: '2',
+        title: 23,
         subtitle: 'Branches in Country',
     },
     {
-        title: '10K+',
+        title: 10976,
         subtitle: 'Furniture Sold',
     },
     {
-        title: '260+',
+        title: 2653,
         subtitle: 'Variant Furniture',
     },
 ];

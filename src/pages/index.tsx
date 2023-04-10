@@ -12,21 +12,24 @@ import RegisterPage from '@/pages/sections/RegisterPage';
 import Navbar from '@/components/Navbar';
 import Testimonial from '@/pages/sections/Testimonial';
 import Contact from '@/pages/sections/Contact';
+import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
     return (
-        <div className='w-full mx-auto font-body'>
-            <Navbar />
-            {/* <LoginPage /> */}
-            <Hero />
-            <Features />
-            <NewItems />
-            <Features2 />
-            <Products />
-            <Testimonial />
-            <Contact />
-        </div>
+        <ThemeProvider attribute='class'>
+            <div className='w-full mx-auto font-body'>
+                <Navbar />
+                {/* <LoginPage /> */}
+                <Hero />
+                <Features />
+                <NewItems />
+                <Features2 />
+                <Products />
+                <Testimonial />
+                <Contact />
+            </div>
+        </ThemeProvider>
     );
 }

@@ -18,7 +18,7 @@ const ProductsSlider = () => {
                         <div className='grid grid-cols-2 w-full md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2'>
                             {page.productList.map((product, index) => {
                                 const { src, title, price } = product;
-                                return <Card src={src} title={title} price={price} />;
+                                return <Card key={index} src={src} title={title} price={price} />;
                             })}
                         </div>
                     </SwiperSlide>
